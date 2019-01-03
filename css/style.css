@@ -1,5 +1,5 @@
 .ofertas{
-    transition-duration: 400ms;
+   transition-duration: 400ms;
 }
 .ofertas:hover{
    border-color: cornflowerblue;
@@ -22,5 +22,13 @@
    background-color: #eee;
 }
 label:hover{
+   cursor: pointer;
+}
+.img-minis{
+   transition-duration: 400ms;
+   
+}
+.img-minis:hover{
+   border-color: cornflowerblue !important;
    cursor: pointer;
 }
