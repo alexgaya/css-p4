@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Ropa de abrigo mujer</title>
+</head>
+
+<body class="bg-light">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+        <a class="navbar-brand p-0" href="index.html">
+            <img src="img/logo.png" alt="logo" class="w-25">
+            Easy Shop
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <!--BUSCADOR-->
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Busca tu producto" aria-label="Busca tu producto"
+                        aria-describedby="button-inside">
+                    <div class="input-group-append">
+                        <button id="button-inside" class="btn btn-outline-success" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!--LOGIN/REGISTRO-->
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Identifícate/Regístrate</button>
+                    <div class="dropdown-menu px-4 py-3">
+                        <p class="text-center mb-2">Bienvenid@</p>
+                        <a href="login.html" class="btn btn-primary w-100">Identifícate</a>
+                        <p class="text-center mt-4 mb-2">¿Nuevo cliente?</p>
+                        <a href="register.html" class="btn btn-primary w-100">Regístrate</a>
+                    </div>
+                </li>
+            </ul>
+            <!--CESTA-->
+            <button class="btn btn-primary mt-2 mt-lg-0 ml-1" data-toggle="modal" data-target="#cestaModal">
+                <i class="fas fa-shopping-cart"></i> Cesta <span class="badge badge-light">3</span>
+            </button>
+        </div>
+    </nav>
+
+    <!--MODAL CESTA-->
+    <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!--HEADER MODAL-->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cestaModalTitulo">Tu cesta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--PRODUCTOS MODAL-->
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <button type="button" class="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h5>Producto 1 <span class="badge badge-secondary">24.99€</span></h5>
+                                    <p>Pequeña descripción del producto</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <button type="button" class="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h5>Producto 2 <span class="badge badge-secondary">10.29€</span></h5>
+                                    <p>Pequeña descripción del producto</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    <button type="button" class="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h5>Producto 3 <span class="badge badge-secondary">4.59€</span></h5>
+                                    <p>Pequeña descripción del producto</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--FOOTER MODAL-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a href="cesta.html" class="btn btn-primary">Ir a la cesta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL BUSCADOR-->
+    <div class="modal fade" id="modalBuscador" tabindex="-1" role="dialog" aria-labelledby="modalBuscadorTitulo"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBuscadorTitulo">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="text-muted">Mostrar resultados para</h5>
+                                <form action="">
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1Modal">
+                                                <label class="custom-control-label" for="customCheck1Modal">Marcas
+                                                    populares</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2Modal">
+                                                <label class="custom-control-label" for="customCheck2Modal">Nuestras
+                                                    marcas</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr class="mr-4">
+                                <h5 class="text-muted">Filtrar por</h5>
+                                <b>Talla</b>
+                                <div class="container mb-3">
+                                    <div class="row">
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">Única</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">32</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">34</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">36</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">38</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">40</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">42</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">44</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">46</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">48</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">50</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">52</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">54</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">56</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">58</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">60</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">62</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">64</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">66</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">68</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">2XS</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">XS</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">S</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">M</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">L</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">XL</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">2XL</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">3XL</button>
+                                        </div>
+                                        <div class="col-2 p-1">
+                                            <button type="button" class="btn btn-primary">4XL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <b>Tallas especiales</b>
+                                <form action="" class="mb-3">
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3Modal">
+                                                <label class="custom-control-label" for="customCheck3Modal">Tallas
+                                                    grandes</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <b>Marca</b>
+                                <form action="" class="mb-3">
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ZhuiKunModal">
+                                                <label for="ZhuiKunModal" class="custom-control-label">ZhuiKun</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="TheNorthFaceModal">
+                                                <label for="TheNorthFaceModal" class="custom-control-label">The North
+                                                    Face</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="SHOBDWModal">
+                                                <label for="SHOBDWModal" class="custom-control-label">SHOBDW</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="SS7Modal">
+                                                <label for="SS7Modal" class="custom-control-label">SS7</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="GeographicalNorwayModal">
+                                                <label for="GeographicalNorwayModal" class="custom-control-label">Geographical
+                                                    Norway</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="CarharttModal">
+                                                <label for="CarharttModal" class="custom-control-label">Carhartt</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="BlendSheModal">
+                                                <label for="BlendSheModal" class="custom-control-label">BlendShe</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="logobeingModal">
+                                                <label for="logobeingModal" class="custom-control-label">logobeing</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="DesigualModal">
+                                                <label for="DesigualModal" class="custom-control-label">Desigual</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="you.uModal">
+                                                <label for="you.uModal" class="custom-control-label">you.u</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <b>Precio</b>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 p-1">
+                                            <button type="button" class="btn btn-primary">0 - 20 EUR</button>
+                                        </div>
+                                        <div class="col-12 p-1">
+                                            <button type="button" class="btn btn-primary">20 - 50 EUR</button>
+                                        </div>
+                                        <div class="col-12 p-1">
+                                            <button type="button" class="btn btn-primary">50 - 100 EUR</button>
+                                        </div>
+                                        <div class="col-12 p-1">
+                                            <button type="button" class="btn btn-primary">100 - 200 EUR</button>
+                                        </div>
+                                        <div class="col-12 p-1">
+                                            <button type="button" class="btn btn-primary">200 - 500 EUR</button>
+                                        </div>
+                                        <div class="col-12 p-1">
+                                            <button type="button" class="btn btn-primary">Más de 500 EUR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTAINER-->
+    <div class="container-fluid mt-3 p-0 pr-md-3 pl-md-3">
+        <div class="row m-0">
+            <div class="d-none d-md-block col-md-3 p-0">
+                <div class="border-right">
+                    <h5 class="text-muted">Mostrar resultados para</h5>
+                    <form action="">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Marcas populares</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2">Nuestras marcas</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr class="mr-4">
+                    <h5 class="text-muted">Filtrar por</h5>
+                    <b>Talla</b>
+                    <div class="container mb-3">
+                        <div class="row justify-content-start">
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">Única</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">32</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">34</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">36</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">38</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">40</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">42</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">44</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">46</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">48</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">50</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">52</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">54</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">56</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">58</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">60</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">62</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">64</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">66</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">68</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">2XS</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">XS</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">S</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">M</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">L</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">XL</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">2XL</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">3XL</button>
+                            </div>
+                            <div class="col-md-4 col-lg-3 p-1">
+                                <button type="button" class="btn btn-primary">4XL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <b>Tallas especiales</b>
+                    <form action="" class="mb-3">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Tallas grandes</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <b>Marca</b>
+                    <form action="" class="mb-3">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="ZhuiKun">
+                                    <label for="ZhuiKun" class="custom-control-label">ZhuiKun</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="TheNorthFace">
+                                    <label for="TheNorthFace" class="custom-control-label">The North Face</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="SHOBDW">
+                                    <label for="SHOBDW" class="custom-control-label">SHOBDW</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="SS7">
+                                    <label for="SS7" class="custom-control-label">SS7</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="GeographicalNorway">
+                                    <label for="GeographicalNorway" class="custom-control-label">Geographical Norway</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="Carhartt">
+                                    <label for="Carhartt" class="custom-control-label">Carhartt</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="BlendShe">
+                                    <label for="BlendShe" class="custom-control-label">BlendShe</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="logobeing">
+                                    <label for="logobeing" class="custom-control-label">logobeing</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="Desigual">
+                                    <label for="Desigual" class="custom-control-label">Desigual</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="you.u">
+                                    <label for="you.u" class="custom-control-label">you.u</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <b>Precio</b>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 p-1">
+                                <button type="button" class="btn btn-primary">0 - 20 EUR</button>
+                            </div>
+                            <div class="col-12 p-1">
+                                <button type="button" class="btn btn-primary">20 - 50 EUR</button>
+                            </div>
+                            <div class="col-12 p-1">
+                                <button type="button" class="btn btn-primary">50 - 100 EUR</button>
+                            </div>
+                            <div class="col-12 p-1">
+                                <button type="button" class="btn btn-primary">100 - 200 EUR</button>
+                            </div>
+                            <div class="col-12 p-1">
+                                <button type="button" class="btn btn-primary">200 - 500 EUR</button>
+                            </div>
+                            <div class="col-12 p-1">
+                                <button type="button" class="btn btn-primary">Más de 500 EUR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row pt-1 pb-4">
+                    <div class="col">
+                        <button type="button" class=" d-md-none btn btn-primary" data-toggle="modal" data-target="#modalBuscador">
+                            Filtrar
+                        </button>
+                    </div>
+                </div>
+                <h5>Abrigos para mujer</h5>
+                <div class="row">
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-3 mb-1">
+                        <div class="card p-2 mx-auto ofertas producto">
+                            <img src="img/abrigo.jpg" alt="product" class="card-img-top w-75 mx-auto">
+                            <div class="card-body pb-1 pr-0 pl-0 text-center">
+                                <h5 class="card-title">Carhartt Nimbus Pullover Woman Mulberry</h5>
+                                <p class="card-text text-weight-light">EUR 119,90 - EUR 160,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <nav aria-label="Search Products Pages">
+                            <ul class="pagination justify-content-center p-1">
+                                <li class="page-item disabled"><a href="" tabindex="-1" aria-disabled="true" class="page-link">Anterior</a></li>
+                                <li class="page-item"><a href="" class="page-link">1</a></li>
+                                <li class="page-item"><a href="" class="page-link">2</a></li>
+                                <li class="page-item"><a href="" class="page-link">3</a></li>
+                                <li class="page-item"><a href="" class="page-link">Siguiente</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="page-footer bg-dark mt-5">
+        <div class="container-fluid">
+            <div class="row pt-4">
+                <div class="col-xs col-md-6 text-white font-weight-bold">Información Easy Shop <br>
+                    <p class="text-white mt-2 font-weight-normal"><a class="text-decoration-none text-white" href="">Atención
+                            al cliente</a>, <a class="text-decoration-none text-white" href="">Disputas</a>, <a class="text-decoration-none text-white"
+                            href="">Protección del comprador</a>, <a class="text-decoration-none text-white" href="">Informar
+                            de una infracción DPI</a></p>
+                </div>
+                <div class="col-xs col-md-6 text-white font-weight-bold">Easy Shop en otros idiomas <br>
+                    <p class="text-white mt-2 font-weight-normal"><a class="text-decoration-none text-white" href="">Pусский</a>,
+                        <a class="text-decoration-none text-white" href="">Português</a>, <a class="text-decoration-none text-white"
+                            href="">Français</a>, <a class="text-decoration-none text-white" href="">Deutsch</a>, <a
+                            class="text-decoration-none text-white" href="">Nederlands</a></p>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-xs col-md-6 text-white font-weight-bold">Buscar por categoría <br>
+                    <p class="text-white mt-2 font-weight-normal"><a class="text-decoration-none text-white" href="">Lo
+                            más popular</a>, <a class="text-decoration-none text-white" href="">Producto</a>, <a class="text-decoration-none text-white"
+                            href="">Promoción</a>, <a class="text-decoration-none text-white" href="">Precio bajo</a>,
+                        <a class="text-decoration-none text-white" href="">Reviews</a></p>
+                </div>
+                <div class="col-xs col-md-6 text-white font-weight-bold">Métodos de pago <br>
+                    <p class="text-white mt-2 font-weight-normal"><a class="text-decoration-none text-white" href="">Conversor
+                            de divisas</a>, <a class="text-decoration-none text-white" href="">Cheques regalo</a>, <a
+                            class="text-decoration-none text-white" href="">Recarga tu cuenta</a>, <a class="text-decoration-none text-white"
+                            href="">Recarga en tienda</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col text-muted pb-3">
+                    <a class="text-muted" href="">Intellectual Property Protection</a> - <a class="text-muted" href="">Privacy
+                        Policy</a> - <a class="text-muted" href="">Law Enforcement Compliance Guide</a> © 2010-2019
+                    EasyShop.com. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

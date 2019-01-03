@@ -1,0 +1,1 @@
+$(".producto").click(() => $(location).attr('href','product.html'));
