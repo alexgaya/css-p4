@@ -1,0 +1,34 @@
+.ofertas{
+   transition-duration: 400ms;
+}
+.ofertas:hover{
+   border-color: cornflowerblue;
+   cursor: pointer;
+}
+.row .col-md p{
+   font-size: .9rem;
+}
+.page-footer .container-fluid .row div p{
+   font-size: .9rem;
+}
+.page-footer .container-fluid .row div p a:hover{
+   text-decoration: none;
+   color: orange !important;
+}
+.page-footer .container-fluid .row div{
+   font-size: .9rem;
+}
+.pagination{
+   background-color: #eee;
+}
+label:hover{
+   cursor: pointer;
+}
+.img-minis{
+   transition-duration: 400ms;
+   
+}
+.img-minis:hover{
+   border-color: cornflowerblue !important;
+   cursor: pointer;
+}
