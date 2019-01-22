@@ -26,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <!--BUSCADOR-->
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline mr-1">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Busca tu producto" aria-label="Busca tu producto"
                         aria-describedby="button-inside">
@@ -38,11 +38,11 @@
                 </div>
             </form>
             <!--LOGIN/REGISTRO-->
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown"
+                    <button class="btn btn-secondary dropdown-toggle mt-2 mt-md-0" type="button" id="dropdownLogin" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Identifícate/Regístrate</button>
-                    <div class="dropdown-menu px-4 py-3">
+                    <div class="dropdown-menu px-4 py-3 w-100">
                         <p class="text-center mb-2">Bienvenid@</p>
                         <a href="login.html" class="btn btn-primary w-100">Identifícate</a>
                         <p class="text-center mt-4 mb-2">¿Nuevo cliente?</p>
@@ -51,14 +51,14 @@
                 </li>
             </ul>
             <!--CESTA-->
-            <button class="btn btn-primary mt-2 mt-lg-0 ml-1" data-toggle="modal" data-target="#cestaModal">
+            <button class="btn btn-primary mt-2 mt-md-0 ml-0 ml-md-1" data-toggle="modal" data-target="#cestaModal">
                 <i class="fas fa-shopping-cart"></i> Cesta <span class="badge badge-light">3</span>
             </button>
         </div>
     </nav>
 
     <!--MODAL CESTA-->
-    <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
+    <div class="modal fade p-0" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <!--HEADER MODAL-->
@@ -115,12 +115,12 @@
     </div>
 
     <!--MODAL BUSCADOR-->
-    <div class="modal fade" id="modalBuscador" tabindex="-1" role="dialog" aria-labelledby="modalBuscadorTitulo"
+    <div class="modal fade  p-0" id="modalBuscador" tabindex="-1" role="dialog" aria-labelledby="modalBuscadorTitulo"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalBuscadorTitulo">Modal title</h5>
+                    <h5 class="modal-title" id="modalBuscadorTitulo">Filtrar</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -151,91 +151,89 @@
                                 <b>Talla</b>
                                 <div class="container mb-3">
                                     <div class="row">
-                                        <div class="col-2 p-1">
-                                            <button type="button" class="btn btn-primary">Única</button>
-                                        </div>
-                                        <div class="col-2 p-1">
+                                        
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">32</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">34</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">36</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">38</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">40</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">42</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">44</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">46</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">48</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">50</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">52</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">54</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">56</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">58</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">60</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">62</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">64</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">66</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">68</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">2XS</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">XS</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">S</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">M</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">L</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">XL</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">2XL</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">3XL</button>
                                         </div>
-                                        <div class="col-2 p-1">
+                                        <div class="col-3 col-md-2 p-1">
                                             <button type="button" class="btn btn-primary">4XL</button>
                                         </div>
                                     </div>

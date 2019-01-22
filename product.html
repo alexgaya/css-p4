@@ -26,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <!--BUSCADOR-->
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline mr-1">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Busca tu producto" aria-label="Busca tu producto"
                         aria-describedby="button-inside">
@@ -38,11 +38,11 @@
                 </div>
             </form>
             <!--LOGIN/REGISTRO-->
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown"
+                    <button class="btn btn-secondary dropdown-toggle mt-2 mt-md-0" type="button" id="dropdownLogin" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Identifícate/Regístrate</button>
-                    <div class="dropdown-menu px-4 py-3">
+                    <div class="dropdown-menu px-4 py-3 w-100">
                         <p class="text-center mb-2">Bienvenid@</p>
                         <a href="login.html" class="btn btn-primary w-100">Identifícate</a>
                         <p class="text-center mt-4 mb-2">¿Nuevo cliente?</p>
@@ -51,14 +51,14 @@
                 </li>
             </ul>
             <!--CESTA-->
-            <button class="btn btn-primary mt-2 mt-lg-0 ml-1" data-toggle="modal" data-target="#cestaModal">
+            <button class="btn btn-primary mt-2 mt-md-0 ml-0 ml-md-1" data-toggle="modal" data-target="#cestaModal">
                 <i class="fas fa-shopping-cart"></i> Cesta <span class="badge badge-light">3</span>
             </button>
         </div>
     </nav>
 
     <!--MODAL CESTA-->
-    <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
+    <div class="modal fade p-0" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <!--HEADER MODAL-->
@@ -116,7 +116,7 @@
 
     <!--CONTAINER-->
     <div class="container-fluid mt-3 p-0 pr-md-3 pl-md-3">
-        <div class="row">
+        <div class="row m-0">
             <div class="d-none d-md-block col-md-2 p-0">
                 <div class="row pl-4">
                     <div class="card w-50 img-minis">
@@ -144,12 +144,53 @@
                     <img src="img/abrigo.jpg" alt="img-grande" class="card-img">
                 </div>
             </div>
-            <div class="col-5">
-                <div class="row">
+            <div class="col col-md-5 mt-3 mt-md-0">
+                <div class="row m-0">
                     <h5>Carhartt Nimbus Pullover Woman Mulberry</h5>
                 </div>
-                <div class="row">
+                <div class="row m-0">
                     <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i>
+                </div>
+                <hr>
+                <div class="row m-0">
+                    <b>Precio:</b> <span class="ml-1">EUR 119,90 - EUR 160,00</span>
+                </div>
+                <div class="row m-0 mt-2">
+                    <label for="talla"><b>Tamaño:</b></label>
+                    <select name="talla" id="talla" class="form-control form-control-sm">
+                        <option value="">Seleccionar</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+
+                    </select>
+                </div>
+                <div class="row m-0 mt-2">
+                    <label for="color"><b>Color:</b></label>
+                    <select name="color" id="color" class="form-control form-control-sm">
+                        <option value="negro">Negro</option>
+                        <option value="azul">Azul</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="gris">Gris</option>
+                        <option value="marron">Marrón</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="granate">Granate</option>
+                        <option value="oliva">Oliva</option>
+                    </select>
+                </div>
+                <div class="row m-0 mt-4">
+                    <div class="card text-center w-100">
+                        <div class="card-body">
+                            <p class="card-title">Para comprar, selecciona <b>Tamaño</b></p>
+                            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Añadir a la cesta</button>
+                            <hr>
+                            <button class="btn btn-secondary">Añadir a la Lista de deseos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

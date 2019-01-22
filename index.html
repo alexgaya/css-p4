@@ -26,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <!--BUSCADOR-->
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline mr-1">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Busca tu producto" aria-label="Busca tu producto"
                         aria-describedby="button-inside">
@@ -38,11 +38,11 @@
                 </div>
             </form>
             <!--LOGIN/REGISTRO-->
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown"
+                    <button class="btn btn-secondary dropdown-toggle mt-2 mt-md-0" type="button" id="dropdownLogin" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Identifícate/Regístrate</button>
-                    <div class="dropdown-menu px-4 py-3">
+                    <div class="dropdown-menu px-4 py-3 w-100">
                         <p class="text-center mb-2">Bienvenid@</p>
                         <a href="login.html" class="btn btn-primary w-100">Identifícate</a>
                         <p class="text-center mt-4 mb-2">¿Nuevo cliente?</p>
@@ -51,14 +51,14 @@
                 </li>
             </ul>
             <!--CESTA-->
-            <button class="btn btn-primary mt-2 mt-lg-0 ml-1" data-toggle="modal" data-target="#cestaModal">
+            <button class="btn btn-primary mt-2 mt-md-0 ml-0 ml-md-1" data-toggle="modal" data-target="#cestaModal">
                 <i class="fas fa-shopping-cart"></i> Cesta <span class="badge badge-light">3</span>
             </button>
         </div>
     </nav>
 
     <!--MODAL CESTA-->
-    <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
+    <div class="modal fade p-0" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <!--HEADER MODAL-->
@@ -140,7 +140,10 @@
     <!--CONTAINER-->
     <div class="container-fluid mt-3 p-0 pr-md-3 pl-md-3">
         <div class="row m-0">
-            <div class="d-none d-md-block col-md-3 p-0">
+            <button class="btn btn-primary d-md-none ml-3 mb-3 dropdown-toggle" type="button" data-toggle="collapse" data-target="#categoriasCollapse" aria-expanded="false" aria-controls="categoriasCollapse">
+                Categorías
+            </button>
+            <div class="d-md-block col-12 col-md-3 p-0 collapse pl-3 pl-md-0 mb-3 mb-md-0" id="categoriasCollapse">
                 <h5 class="w-100">Categorías: </h5>
                 <div class="border-right">
                     <a href="category.html" class="text-left btn btn-light w-100 rounded-0"><i class="fas fa-female mr-2"></i>Moda
