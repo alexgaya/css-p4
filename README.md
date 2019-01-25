@@ -5,7 +5,7 @@
 
 #todo 
 - <del>products.html</del>
-- login.html
+- <del>login.html</del>
 - register.html
 - requirements: Typography, validation form (login)
 - The menu has to contain the complete set of categories and subcategories
