@@ -13,4 +13,6 @@
 - upload  
 
 
-https://rawcdn.githack.com/alexgaya/css-p4/b1f61daf15d89eed048fedab963a4d2ea895ddf8/index.html
+https://rawcdn.githack.com/alexgaya/css-p4/232ba153f723273ab48d556527ce332837d64e49/index.html
+
+https://raw.githack.com/alexgaya/css-p4/master/index.html
